@@ -26,8 +26,8 @@ def execute_transaction
  else
    @status = "complete"
  end
-   
-     
+
+
 end
 
 end
