@@ -26,7 +26,8 @@ def execute_transaction
  end
  binding.pry
  if !@sender.valid?
-   "Transaction rejected. Please check your account balance." && @status = "rejected"
+   @status = "rejected"
+   "Transaction rejected. Please check your account balance."
 
  end
 
