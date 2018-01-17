@@ -18,12 +18,13 @@ def valid?
 end
 
 def execute_transaction
-  binding.pry
+
   if @status == "pending"
    @receiver.balance += amount
    @sender.balance -= amount
    @status = "complete"
  end
+ binding.pry
  if !@sender.valid?
    "Transaction rejected. Please check your account balance." && @status = "rejected"
 
