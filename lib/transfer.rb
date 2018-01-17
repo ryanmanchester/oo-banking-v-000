@@ -18,7 +18,7 @@ def valid?
 end
 
 def execute_transaction
-  #binding.pry
+  binding.pry
   if @status == "pending"
    @receiver.balance += amount
    @sender.balance -= amount
